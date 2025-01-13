@@ -73,34 +73,44 @@ body {
 }
 .category {
   background-color: rgb(255, 255, 255, 0.1);
-  padding: 0.3rem;
   border-radius: 2rem;
-  width: 24vw;
+  width: 27vw;
   height: 5vh;
+  display: flex;
+  justify-content: center;
+}
+.category-link {
+  padding: 0;
+  display: flex;
+  width: 10vw;
+  position: relative;
+  bottom: 0.5vh;
+}
+.select-container {
+  display: flex;
+  width: 12vw;
 }
 .category select {
-  padding: 0.4rem;
-  width: 14vw;
+  width: 12vw;
   border-radius: 1rem;
   border: none;
-  position: relative;
-  right: 2.5vw;
-  bottom: -0.2vh;
-  z-index: 3;
+  margin-top: 0.5vh;
+  height: 4vh;
 }
-.category a {
-  position: relative;
-  right: 2.7vw;
-  top: 0.3vh;
+.search-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5vw;
 }
 .category button {
-  position: relative;
-  left: 24vw;
-  bottom: 4.3vh;
   width: 2vw;
-  padding: 0.3rem;
   border-radius: 10rem;
+  padding: 0.3rem;
   border: none;
+  position: relative;
+  right: 2.8vw;
+  top: 0.2vh;
   &:hover {
     cursor: pointer;
   }

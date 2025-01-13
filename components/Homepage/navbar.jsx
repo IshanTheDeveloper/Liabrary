@@ -13,34 +13,40 @@ function Navbar() {
       <Link to="/addbooks">Add Books</Link>
 
       <div className="category">
-        <Link to="/category">Category : </Link>
-        <select
-          onChange={(e) => setSelectedCategory(e.target.value)}
-          name="category"
-        >
-          <option value="null"></option>
+        <div className="category-link">
+          <a href="/category">Category : </a>
+        </div>
+        <div className="select-container">
+          <select
+            onChange={(e) => setSelectedCategory(e.target.value)}
+            name="category"
+          >
+            <option value="null"></option>
 
-          <option value="fiction">Fiction</option>
+            <option value="fiction">Fiction</option>
 
-          <option value="non-fiction">Non-Fiction</option>
+            <option value="non-fiction">Non-Fiction</option>
 
-          <option value="sci-fi">Science Fiction</option>
+            <option value="sci-fi">Science Fiction</option>
 
-          <option value="children">Children</option>
+            <option value="children">Children</option>
 
-          <option value="poetry">Poetry</option>
+            <option value="poetry">Poetry</option>
 
-          <option value="comics">Comics</option>
-        </select>
-        <Link to="/category">
-          <button>
-            <img
-              src="https://cdn-icons-png.flaticon.com/128/954/954591.png"
-              alt=""
-              width="17px"
-            />
-          </button>
-        </Link>
+            <option value="comics">Comics</option>
+          </select>
+        </div>
+        <div className="search-link">
+          <Link to="/category">
+            <button>
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/954/954591.png"
+                alt=""
+                width="17px"
+              />
+            </button>
+          </Link>
+        </div>
       </div>
       <div className="logo">
         <img
